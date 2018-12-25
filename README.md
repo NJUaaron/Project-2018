@@ -268,10 +268,10 @@
         |—— turing.jar (Java) / turing (C++)
         |—— case1
             |——test.tm
-            |——input.txt
+            |——input.txt  // 请自备，验收测试时助教会另外统一输入文件
         |—— case2
             |——test.tm
-            |——input.txt
+            |——input.txt  // 请自备，验收测试时助教会另外统一输入文件
         |—— 161220XXX-张三.pdf (MG1833XXX-李四.pdf)
         |—— your-project
     ```
