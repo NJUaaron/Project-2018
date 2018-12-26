@@ -229,17 +229,17 @@
     - 输出也为两个文件。第一个文件是运行时信息输出文件 `console.txt`，具体输出要求见 ***[任务二](#任务二图灵机模拟器 )*** 。第二个文件为结果文件 `result.txt`。结果文件中的每一行对应着输入文件中的每一行输入字符串对应的输出结果 (**当输入字符串不合法时，在结果文件中输出一行 `Error`；当输入字符串合法且在图灵机描述的语言中时，在结果文件中输出一行 `True`；当输入字符串合法但不在图灵机描述的语言中时，在结果文件中输出一行 `False`**)。
     - 请将每个图灵机程序文件及对应的测试文件放在一个可执行文件同级目录的一个子目录下，并且生成的输出文件也放置在该子目录下。文档结构示例如下：
         ```
-        |——turing.jar (Java) / turing (C++)  // 可执行程序
-        |——case1                             // 测试子目录
-            |——test.tm                       // 图灵机程序文件
-            |——input.txt                     // 测试文件
-            |——console.txt                   // 运行时信息输出文件
-            |——result.txt                    // 结果文件
-        |——case2                             // 测试子目录
-            |——test.tm                       // 图灵机程序文件
-            |——input.txt                     // 测试文件
-            |——console.txt                   // 运行时信息输出文件
-            |——result.txt                    // 结果文件
+        |—— turing.jar (Java) / turing (C++)  // 可执行程序
+        |—— case1                             // 测试子目录
+            |—— test.tm                       // 图灵机程序文件
+            |—— input.txt                     // 测试文件
+            |—— console.txt                   // 运行时信息输出文件
+            |—— result.txt                    // 结果文件
+        |—— case2                             // 测试子目录
+            |—— test.tm                       // 图灵机程序文件
+            |—— input.txt                     // 测试文件
+            |—— console.txt                   // 运行时信息输出文件
+            |—— result.txt                    // 结果文件
         ```
 3. 为方便我们进行测试，请确认以下事项：
     - **若你使用 Java 实现**。请将你的 Java 项目打包为一个可执行 `jar` 包，命名为 `turing.jar`，并确保能够正确运行以下命令 (参数 `case-directory` 为测试子目录)：
@@ -251,6 +251,8 @@
         ./turing case-directory
         ```
     命令执行成功后，会在 `case-directory` 目录下生成两个文件 `console.txt` 和 `result.txt`。
+    > *注*：**`case-directory` 中只包含目录名，不包含路径分隔符，如 `case1`**；
+
 
 ## 4. 提交说明
 
@@ -267,11 +269,11 @@
     |—— 161220XXX-张三.zip (MG1833XXX-李四.zip)
         |—— turing.jar (Java) / turing (C++)
         |—— case1
-            |——test.tm
-            |——input.txt  // 请自备，验收测试时助教会另外统一输入文件
+            |—— test.tm
+            |—— input.txt  // 请自备，验收测试时助教会另外统一输入文件
         |—— case2
-            |——test.tm
-            |——input.txt  // 请自备，验收测试时助教会另外统一输入文件
+            |—— test.tm
+            |—— input.txt  // 请自备，验收测试时助教会另外统一输入文件
         |—— 161220XXX-张三.pdf (MG1833XXX-李四.pdf)
         |—— your-project
     ```
